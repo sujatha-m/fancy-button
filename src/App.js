@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import AngryButton from './components/fancy-buttons/AngryButton';
+import CounterButton from './components/fancy-buttons/CounterButton';
+import LightSwitchButton from './components/fancy-buttons/LightSwitchButton';
+import TextReapeaterButton from './components/fancy-buttons/TextRepeaterButton';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={`App`}>
+        <h1>Fancy Buttons!!</h1>
+        <section>
+        <AngryButton />
+        <CounterButton />
+        <LightSwitchButton />
+        <TextReapeaterButton />
+        </section>
+
     </div>
   );
 }
