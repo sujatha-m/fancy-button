@@ -1,9 +1,16 @@
-import React from "react";
+import React,{useState} from "react";
 
 function TextReapeaterButton() {
+    const [repetitions, setRepetations] = useState(1);
+
+    const textArray = [];
+    for(let i = 0; i < repetitions; i++) {
+        textArray.push(<span key = {i}>I like this text</span>)
+    }
+
     return(
-        <button>
-            <span>I like this text</span>
+        <button className="TextRepeaterButton">
+            {textArray}
         </button>
     )
 }
